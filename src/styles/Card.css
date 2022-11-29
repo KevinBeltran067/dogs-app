@@ -1,0 +1,13 @@
+.Card_back{
+    background-color: aquamarine;
+    border: 1px solid black;
+    width: 30vh;
+    text-align: center;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+
+.Card_Button{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}

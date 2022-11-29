@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Dogs from "./components/Dogs";
+import Card from "./components/Card";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const perros= Dogs();
+
+  return(
+    <>
+      {perros.map(p=>(
+        <Card
+        key={p.id}
+        id={p.id} 
+        img={p.url}
+        ancho={p.width}
+        alto={p.height}
+        />
+      ))}
+    </>
+  )
 }
 
 export default App;
